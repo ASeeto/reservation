@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding-left: 0px;
+	font-family: Arial, Helvetica, sans;
+	background: #fff;
+}
+#header {
+	display: block;
+	height: 125px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto; 
+	background-image: url('../images/header.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#fix {
+	text-align: center;
+	margin: 0px auto 0px auto;
+}
+#nav {
+	display: inline-block;
+	width: 100%;
+	background: #fff;
+}
+#nav ul {
+	width: 90%;
+	margin: 30px;
+	padding: 0px 0px 0px 46px;
+	list-style-type: none;
+	background: #fff;
+}
+#nav ul li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 85%;
+}
+#nav ul li a{
+	display: inline-block;
+	display: block;
+	margin: 0 .5em 0 0;
+	padding: .25em 50px .25em 50px;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #980000;
+	border-bottom: none;
+	background: #fff;
+}
+#nav a:hover, body#home #t-home a {
+	color: #fff;
+	background: #333;
+}
+#content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color:#000;
+	padding-bottom: 20x;
+	height: auto;
+	width: 800px;
+	border: 1px solid #980000;
+}
+#footer {
+	background: #333;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color:#fff;
+	padding: 0x;
+	height: 130px;
+	width: 800px;
+	border: 1px solid #980000;
+}
+
+#page {
+	padding: 10px;
+	width: 780px;
+	height: auto;
+	z-index:1;
+	background-color: #fff;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position:relative;
+	top:0px;
+	left: auto;
+	right: auto;
+}
+
+#page.shadow {
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+/*--Main Container--*/
+.main_view {
+	float: left;
+	position: relative;
+}
+/*--Window/Masking Styles--*/
+.window {
+	height:250px;	
+	width: 700px;
+	overflow: hidden; /*--Hides anything outside of the set width/height--*/
+	position: relative;
+	top:20px;
+	left:40px;
+}
+.image_reel {
+	position: absolute;
+	top: 0; 
+	left: 0px;
+}
+.image_reel img {
+	float:left;
+	}
+
+/*--Paging Styles--*/
+.paging {
+	position: absolute;
+	bottom: 30px; right: -20px;
+	width: 178px; height:47px;
+	z-index: 100; /*--Assures the paging stays on the top layer--*/
+	text-align: center;
+	line-height: 40px;
+	background: url(../images/paging_bg2.png) no-repeat;
+	display: none; /*--Hidden by default, will be later shown with jQuery--*/
+}
+.paging a {
+	padding: 5px;
+	text-decoration: none;
+	color: #fff;
+}
+.paging a.active {
+	font-weight: bold;
+	background: #696969;
+	border: 1px solid #2e2e2e;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.paging a:hover {font-weight: bold;
+}
